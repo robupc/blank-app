@@ -445,6 +445,7 @@ def main():
                     node.calculate_binary_numbers()
             root_nodes = build_node_hierarchy(nodes)
             for root in root_nodes:
+                root.active = True
                 root.calculate_tree_number(nodes)
             #st.write(tree_number_lis)
             st.write(f"シミュレーション {sim+1} 完了")
